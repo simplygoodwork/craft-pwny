@@ -1,0 +1,16 @@
+{% requireAdmin %}
+{% import "_includes/forms" as forms %}
+
+<div>
+    {{ forms.lightswitchField({
+        label: "Enable password validation"|t('pwny'),
+        name: 'enabled',
+        on: settings.enabled,
+    }) }}
+
+    {{ forms.textareaField({
+        label: "Message"|t('nag'),
+        name: 'message',
+        value: settings.message
+    }) }}
+</div>

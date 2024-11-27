@@ -4,6 +4,8 @@ Enhance your site's security by ensuring users select stronger passwords than `p
 
 This plugin was inspired by the Cloudflare blog post [Validating Leaked Passwords with k-Anonymity](https://blog.cloudflare.com/validating-leaked-passwords-with-k-anonymity/) and this one by [Troy Hunt](https://www.troyhunt.com/ive-just-launched-pwned-passwords-version-2/) creator of the [Have I Been Pwnd](https://haveibeenpwned.com/?ref=troyhunt.com) service.
 
+![Error message](./images/error.png)
+
 ## Requirements
 
 This plugin requires Craft CMS `5.0.0` or later.
@@ -23,6 +25,12 @@ for DDEV users:
 ```
 ddev composer require "simplygoodwork/craft-pwny:^1.0.0" -w && ddev craft plugin/install pwny
 ```
+
+## Settings
+
+You can toggle the service and customise the error message.
+
+![Settings](./images/settings.png)
 
 ---
 
