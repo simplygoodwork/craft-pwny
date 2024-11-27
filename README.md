@@ -8,9 +8,9 @@ This plugin was inspired by the Cloudflare blog post [Validating Leaked Password
 
 ## Requirements
 
-This plugin requires Craft CMS `5.0.0` or later.
+This plugin requires Craft CMS `5.3.0` or later.
 
-The plugin needs to make a call to free [Have I Been Pwnd API](https://haveibeenpwned.com/API/v3#SearchingPwnedPasswordsByRange) at the address `https://api.pwnedpasswords.com/` in case you need to whitelist this on your host.
+The plugin needs to make a call to the free [Have I Been Pwnd API](https://haveibeenpwned.com/API/v3#SearchingPwnedPasswordsByRange) at the address `https://api.pwnedpasswords.com/` in case you need to whitelist this on your host.
 
 ## Installation
 
