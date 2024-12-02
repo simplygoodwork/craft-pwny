@@ -23,7 +23,7 @@
     "email": "hello@simplygoodwork.com",
     "issues": "https://github.com/simplygoodwork/craft-pwny/issues?state=open",
     "source": "https://github.com/simplygoodwork/craft-pwny",
-    "docs": "https://github.com/simplygoodwork/craft-pwny/main/README.md"
+    "docs": "https://github.com/simplygoodwork/craft-pwny/blob/main/README.md"
   },
   "require": {
     "php": "^8.2",
