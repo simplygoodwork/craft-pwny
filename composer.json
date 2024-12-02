@@ -2,7 +2,7 @@
   "name": "simplygoodwork/craft-pwny",
   "description": "Validate user passwords against the Pwned Passwords API",
   "type": "craft-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "craft",
     "cms",
