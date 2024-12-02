@@ -8,7 +8,7 @@ namespace simplygoodwork\pwny\models;
 class Settings extends \craft\base\Model
 {
     public bool $enabled = true;
-	public bool $restrictToCpUsers = false;
+	public bool $restrictToCpUsers = true;
     public string $message = "This password has previously appeared in a data breach and should never be used. If you've ever used it elsewhere before, change it! [More information](https://haveibeenpwned.com/Passwords).";
 
 	public function defineRules(): array
