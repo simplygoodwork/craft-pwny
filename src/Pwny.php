@@ -67,8 +67,13 @@ class Pwny extends Plugin
             function(ModelEvent $event) {
                 $user = $event->sender;
 
-                // User has set a new password
-                if ($user->newPassword) {
+				$restrictToCpUsers = Pwny::$plugin->settings['restrictToCpUsers'];
+
+				// If user can access CP, or we're checking all users and they've set a new password, run validation
+                if (
+					(!$restrictToCpUsers || $user->can('accessCp'))
+					&& $user->newPassword
+				) {
                     // Test against Have I Been Pwnd API
                     $error = $this->validate->apiCheck($user->newPassword);
                     $event->isValid = $error == false;

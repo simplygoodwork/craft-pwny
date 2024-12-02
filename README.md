@@ -28,9 +28,23 @@ ddev composer require "simplygoodwork/craft-pwny:^1.0.0" -w && ddev craft plugin
 
 ## Settings
 
-You can toggle the service and customise the error message.
+You can toggle the service, restrict to just users with CP access and customise the error message.
 
 ![Settings](./images/settings.png)
+
+If you want to toggle the plugin on/off using environment variables, you could create a `config/pwny.php` file to override this setting. 
+The example below uses `PWNY_ENABLED` in `.env` but defaults to `true` (on) if the variable can't be found:
+
+```php
+<?php
+
+use craft\helpers\App;
+
+return [
+	'enabled' => App::env('PWNY_ENABLED') ? App::env('PWNY_ENABLED') : true,
+];
+
+```
 
 ---
 

@@ -4,12 +4,21 @@
 <div>
     {{ forms.lightswitchField({
         label: "Enable password validation"|t('pwny'),
+		instructions: "Disable validatino without uninstalling the plugin.",
         name: 'enabled',
         on: settings.enabled,
     }) }}
 
+	{{ forms.lightswitchField({
+		label: "Restrict to Control Panel users"|t('pwny'),
+		instructions: "Only check for pwned passwords on accounts that have CP access.",
+		name: 'restrictToCpUsers',
+		on: settings.restrictToCpUsers,
+	}) }}
+
     {{ forms.textareaField({
         label: "Message"|t('nag'),
+		instructions: "Validation error shown on the set password form. Accepts simple markdown formatting",
         name: 'message',
         value: settings.message
     }) }}
