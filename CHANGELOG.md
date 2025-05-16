@@ -1,5 +1,11 @@
 # Pwny Changelog
 
+## 1.0.2 - 2025-05-15
+
+### Fixed
+
+- Updated link to the README. Thanks @brandonkelly!
+
 ## 1.0.1 - 2024-12-02
 
 ### Changed
